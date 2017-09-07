@@ -1,0 +1,5 @@
+@media screen and (max-width:768px ) {
+    .navbar-default .navbar-collapse{border-top: 1px solid #e7e7e7; margin-top: 50px;}
+    .navbar-default .navbar-toggle{background: transparent;}
+    .navbar-default .navbar-toggle:hover{background: #fff;}
+}

@@ -1,0 +1,85 @@
+html{
+    width: 100%; height: 100%;}
+@media screen and (min-width:1200px ) {
+    header h1{font-size:54px!important;}
+}
+@media screen and (min-width:992px ) and (max-width:1200px) {
+    header h1{font-size: 44px!important;}
+}
+@media screen and (min-width:768px ) and (max-width:992px) {
+    .navbar-header{width: 100%;}
+    .navbar-header a{display: block; margin-left: 37%!important;}
+    .navbar-header #img2{margin-top: 7px;}
+    .navbar-header #img1 img{width: 70%!important;}
+    header h1{font-size: 35px!important;}
+}
+@media screen and (min-width:768px ) {
+    header{height: 625px;}
+    .query h2{font-size: 70px!important; font-weight: 400;}
+    .query p{font-size: 21px;}
+    .implement p{font-size: 22px!important;}
+    .ready h2{font-size: 80px!important;}
+    .feature .row p:last-of-type{font-size: 20px!important;}
+}
+@media screen and (max-width:992px ) {
+    .blog .row:last-of-type .container-fluid .row div .blogImg{max-width: 300px; margin: 0 auto;}
+}
+@media screen and (max-width:768px ) {
+    nav{background: #fff!important;}
+    #img1{display: none!important;}
+    .logo{float: left;}
+    .navbar-header a{display: block; margin-left: 0!important;}
+    #img2{display: block!important; z-index: 100000000;}
+    header{padding-bottom: 90px;}
+    header .row div:first-of-type .header-text{max-width: 500px; margin: 0 auto;  padding: 0;}
+    header h1,header h2{text-align: center;}
+    header .row div:first-of-type div a{margin: 0 auto; margin-bottom: 30px;}
+    header .row .phone{width: 100%!important;}
+    header .row .phone  a{display: block;}
+    header .row .phone  a img{ max-width: 300px; display: block; margin: 0 auto;}
+    .query .container{width: 750px;}
+}
+
+a{transition: all .35s;}
+a:hover{text-decoration: none;}
+ul,li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-family:"sans-serif","Arial","Helvetica"; font-weight: 400;}
+/* ***********nav开始*/
+nav{ position: fixed!important;top: 0!important; z-index: 100000; }
+nav ul li a{letter-spacing: 1px; font-size: 12px; color: rgba(255,255,255,0.7)!important;}
+nav ul li a:hover{color: rgba(255,255,255,1)!important; display: block;}
+.navbar .img2{display: none; z-index: 10000000; }
+#img2 img{width:70%;}
+#color li a:hover{color: #555!important;}
+.navbar .logo a{padding-top: 7px; display: block;  }
+.dropdown-menu{  right: 0;left: auto; border: 1px solid rgba(255,255,255,0.7); border-top-left-radius: 0; border-top-right-radius: 0; background: rgba(255,255,255,0);  }
+.dropdown-menu li a{font-size: 16px; letter-spacing: 2px; color: rgba(255,255,255,0.7);}
+.navbar-default{ background:rgba(255,255,255,0);  border-color:rgba(255,255,255,0); }
+.navbar-default .navbar-nav .open a:focus{  color: #fff;  background: none;  }
+nav li:hover .dropdown-menu {display: block;}
+nav .subMeau{width: 100%; border: 0;}
+.navbar-default .navbar-toggle:hover{background: none;}
+nav .subMeau li a{color: #555!important;}
+.fixedNav{  position:fixed; border-color: rgba(34, 34, 34, 0.1); transition: 0.5s;  background: #fff!important; top:0; left:0; width:100%; z-index:100000; _position:absolute; _top:expression(eval(document.documentElement.scrollTop));}
+.fontcolor{color: #555!important;}
+.fontcolor:hover{color: #ccc!important;}
+/**************Nav结束*/
+/**************header开始*/
+header{background: url(../img/bg-pattern.png), linear-gradient(to left, #1F8A70, #145747); color: #fff;padding-top: 100px; overflow: hidden;}
+header h1{font-size: 40px; font-weight: 400; padding-top: 14px; }
+header .btn-xl,.ready .btn-xl{display:block ; width: 263px; height:47px; line-height: 47px; border: 1px solid #fff; border-radius: 300px; font-size: 12px; color: #fff;}
+header .btn-xl:hover,.ready .btn-xl:hover{background:#333; border-color: #333; }
+header .row div:nth-of-type(2){ padding: 0;}
+header .row div:nth-of-type(2) a img{  width: 100%;}
+/**************header结束*/
+/*************footer开始*/
+footer{padding: 25px; color: rgba(255, 255, 255, 0.3); background-color: #222222;}
+footer .row div:first-of-type p {font-size: 12px;line-height: 38px;  height: 38px; font-weight: 100; margin: 0;}
+footer .row div:first-of-type p a{ color: rgba(255, 255, 255, 0.3); }
+footer .row div:first-of-type p a:hover{text-decoration: underline; }
+footer .row div:last-of-type p:first-of-type{ font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 21px; font-weight: 100;}
+footer .row form input{width: 140px;}
+footer .btn{ border: 1px solid #fff; background: transparent; border-radius: 300px; color: #fff;}
+footer .btn:hover{background: #333;color: #fff; border: 1px solid transparent;}
+footer .row div:last-of-type p:last-of-type{font-size: 12px;}
+/***********footer结束*/

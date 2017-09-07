@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--屏蔽电话号码-->
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <!--让IE按照最新版本进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动设备优先    视窗    宽度=设备宽度         缩放比例1倍    最大缩放比例1倍      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+
+    <title>QueryTree</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <style>
+
+/*************query开始 */
+        .query{background: linear-gradient(#F8F8F8, #E7E7E7); padding: 150px 0;}
+        .query h2{font-size: 50px;}
+        .query p{ font-weight: 100; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  }
+        .implement{padding: 100px 0;}
+        .implement p{font-size: 16px; font-weight: 100; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  }
+/**********query结束*/
+/**************ready开始*/
+        .ready{background: url("img/bg-cta.jpg") no-repeat center center; padding: 250px 0;}
+        .ready h2{color: #fff; font-size: 50px; margin-bottom: 20px; max-width: 450px;}
+ /*************ready结束 */
+/**************feature开始*/
+        .feature{padding: 100px 0;}
+        .feature .row:last-of-type i{  font-size: 80px;  background: -webkit-linear-gradient(to left, #1F8A70, #145747);  background: linear-gradient(to left, #1F8A70, #145747);  -webkit-background-clip: text;  -webkit-text-fill-color: transparent;}
+        .feature hr, .blog hr{max-width: 100px; border: 1px solid rgba(34, 34, 34, 0.1); margin: 25px auto  0; }
+        .feature .row h2{font-size: 50px;}
+        .feature .row:last-of-type div{margin-top: 100px;}
+        .feature .row h3{font-size: 30px;}
+        .feature .row p:first-of-type{font-size: 24px;font-style: italic;color: #5cb85c;}
+        .feature .row p:last-of-type{font-size: 16px; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;; }
+        .feature .row a,.build a{border-radius: 300px; letter-spacing: 2px; margin-top: 10px;}
+/*************feature结束 */
+/*************value开始*/
+        .value{padding: 150px 0;background: linear-gradient(#F8F8F8, #E7E7E7);}
+/**************value结束*/
+/**************blog开始*/
+        .blog{padding: 100px 0;}
+        .blog h2{font-size: 50px;}
+        .blog .row:last-of-type .container-fluid .row div{margin-top: 50px;}
+        .blog .row:last-of-type .container-fluid .row div h3 a{font-size: 30px;color: #333;}
+        .blog .row:last-of-type .container-fluid .row div h3 a:hover{ text-decoration: underline;}
+/**************blog结束*/
+/************build开始*/
+        .build{padding: 100px 0;background: linear-gradient(#F8F8F8, #E7E7E7);}
+        .build h2{font-size: 50px;}
+        .build a{padding:15px 45px; }
+/************build结束*/
+
+    </style>
+
+
+</head>
+<body>
+<!--nav开始-->
+
+<nav class="navbar  navbar-default navbar-fixed-top" id="bbb">
+    <div class="container">
+        <div class="navbar-header logo">
+            <a href="index.html" id="img1" class="img1 navbar-brand"><img src="img/logo-light.png"></a>
+            <a href="index.html" id="img2" class="img2 navbar-brand " style="display: none;"><img src="img/logo-mid.png" class="img-responsive"></a>
+        </div>
+        <button style="margin-top: 8px;" class="btn btn-default pull-right visible-xs" data-toggle="collapse" data-target="#subMeau">Menu
+            <i class="glyphicon glyphicon-collapse-down"></i>
+        </button>
+        <ul class="nav navbar-nav nav-pills hidden-xs pull-right">
+            <li><a href="Features/Features.html" class="font">FEATURES</a></li>
+            <li class="dropdown"><a  class="font" href="Solutions/Solutions .html" >SOLUTIONS<span class="caret hidden-xs" style="color:rgba(255,255,255,0.7);"></span></a>
+                <ul class="dropdown-menu" id="color">
+                    <li><a href="Solutions/forsoftware.html">FOR SOFTWARE AGENCIES</a></li>
+                    <li><a href="Solutions/forStartups.html">FOR STARTUPS</a></li>
+                    <li><a href="Solutions/forMarketing.html">FOR MARKETING TEAMS</a></li>
+                </ul>
+            </li>
+            <li><a href="Pricing/pricing.html" class="font">PRICING</a></li>
+            <li><a href="about/about.html" class="font">ABOUT</a></li>
+            <li><a href="help/help.html" class="font">HELP</a></li>
+            <li><a href="contact/contact.html" class="font">CONTACT</a></li>
+            <li><a href="blog/blog.html" class="font">BLOG</a></li>
+            <li><a href="sign/sign-in.html" class="font">SIGN IN</a></li>
+        </ul>
+
+        <ul class="nav  collapse navbar-toggle hidden-md hidden-lg hidden-sm subMeau" id="subMeau">
+            <li><a href="Features/Features.html">FEATURES</a></li>
+            <li><a href="Solutions/Solutions .html">SOLUTIONS</a></li>
+             <li><a href="Pricing/pricing.html" class="font">PRICING</a></li>
+            <li><a href="about/about.html" class="font">ABOUT</a></li>
+            <li><a href="help/help.html" class="font">HELP</a></li>
+            <li><a href="contact/contact.html" class="font">CONTACT</a></li>
+            <li><a href="blog/blog.html" class="font">BLOG</a></li>
+            <li><a href="sign/sign-in.html" class="font">SIGN IN</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!--nav结束-->
+<!--header开始-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <div class="header-text">
+                    <h1>Straightforward data reporting and <br> visualization</h1>
+                    <h2>QueryTree makes it easy to understand the stories behind your software's data</h2><br>
+                    <a href="sign/sign-up.html" class="btn-xl text-center">START YOUR FREE TEIAL </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 phone">
+                <a href=""><img src="img/PHONE_03.gif"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header结束-->
+<!--What is QueryTree开始-->
+<section class="query text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2  wow flipInX">
+                <h2>What is QueryTree?</h2>
+                <p>QueryTree is a flexible, powerful, and secure <strong>database reporting</strong> and <strong>visualization tool</strong> that allows people to easily access and understand their software or app's data.</p>
+                <p>Implementation takes mere minutes, and enables non-technical team members to <strong>build</strong> and <strong>schedule their own reports, pivot tables</strong>, and <strong>visualizations</strong> wherever and whenever they want to, without needing the help of a developer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--What is QueryTree结束-->
+<!--Implement开始-->
+<div class="implement">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="server1 wow pulse">
+                    <i class="fa fa-4x fa-plug bounceIn " ></i>
+                    <h3>Implement</h3>
+                    <p>Securely connect your MySQL, PostgreSQL, or Microsoft SQL Server database in just a few minutes</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="server1 wow pulse">
+                    <i class="fa fa-4x fa-hand-pointer-o bounceIn wow animated" ></i>
+                    <h3>Build</h3>
+                    <p>Use our intuitive and user-friendly drag-and-drop report builder to explore, select, and sort your data</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="server1 wow pulse">
+                    <i class="fa fa-4x fa-bar-chart bounceIn wow animated"></i>
+                    <h3>Visualize</h3>
+                    <p>Generate useful interactive charts that visually summarize what's really going on with your software</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Implement结束-->
+<!--ready开始-->
+<div class="ready">
+    <div class="ready-cta">
+        <div class="container">
+            <h2>Ready to build your first report?</h2>
+            <a href="sign/sign-up.html" class="btn-xl text-center">START YOUR FREE TEIAL</a>
+        </div>
+    </div>
+</div>
+<!--ready结束-->
+<!--feature开始-->
+<div class="feature">
+    <div class="container">
+        <div class="row wow bounceInDown">
+            <div class="col-lg-12 text-center">
+               <h2> Who is QueryTree for?</h2><hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 text-center wow bounceInUp">
+                <i class="fa fa-code animated wow bounceIn" data-wow-delay=".2s" style="animation-delay: 0.2s"></i>
+                <h3>Software agencies</h3>
+                <p>"How many users opened our client's app this month?"</p>
+                <p>QueryTree easily enables your customers to access the wealth of data in their database without the need for expensive bespoke reporting solutions</p>
+                <a href="Solutions/forsoftware.html" class="btn btn-success">FOR SOFTWARE AGENCIES</a>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center wow bounceInUp">
+                <i class="fa fa-rocket animated wow bounceIn" data-wow-delay=".3s" style="animation-delay: 0.3s"></i>
+                <h3>Startups</h3>
+                <p>"How many signups did we get this week from search?"</p>
+                <p>QueryTree makes it really easy to access your data, enabling you to gain valuable new insight into who's doing what in your software</p>
+                <a href="Solutions/forStartups.html" class="btn btn-success">FOR STARTUPS</a>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center wow bounceInUp">
+                <i class="fa fa-bullhorn animated wow bounceIn" data-wow-delay=".4s" style="animation-delay: 0.4s"></i>
+                <h3>Marketing teams</h3>
+                <p>"What does our revenue look like this year so far?"</p>
+                <p>QueryTree makes it easy to get to grips with your database, giving you the basis you need to make better marketing decisions</p>
+                <a href="Solutions/forMarketing.html" class="btn btn-success">FOR MARKETING TEAMS</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--feature结束-->
+<!--value开始-->
+<div class="value">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 wow flipInX" >
+                <h3 class="text-center">"QueryTree has changed the way we think about reporting and visualization for our clients, it's added a huge amount of value"</h3>
+                <p class="text-center" style="font-size: 16px;">Ria Blagburn, Founder @ Grow Beyond: a digital marketing consultancy</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--value结束-->
+<!--blog开始-->
+<div class="blog">
+    <div class="container">
+        <div class="row wow bounceInDown">
+            <div class="col-lg-12 text-center"><h2>The latest from the QueryTree blog</h2><hr></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 text-center wow bounceInUp">
+                            <div class="blogImg">
+                                <a href=""><img src="img/MZTi6tb.png" class="img-responsive"></a>
+                                <h3><a href="">Google Data Studio is now free so why use anything else?</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 text-center wow bounceInUp">
+                            <div class="blogImg">
+                                <a href=""><img src="img/3Mc8oxJ.jpg" class="img-responsive"></a>
+                                <h3><a href="">In a post-Cloudbleed world, database backups matter more than ever</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 text-center wow bounceInUp">
+                            <div class="blogImg">
+                                <a href=""><img src="img/qwA5cCe.jpg" class="img-responsive"></a>
+                                <h3><a href="">How to fine-tune your buyer personas with data you already have</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--blog结束-->
+<!--build开始-->
+<div class="build">
+    <div class="container text-center">
+        <h2 class="text-center wow bounceInLeft ">Build your first report in minutes</h2>
+        <a href="sign/sign-up.html" class=" btn btn-success wow bounceInRight">START YOUR FREE TRIAL</a>
+    </div>
+</div>
+<!--build结束-->
+<!--footer开始-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="">Privacy</a> • <a href="">Terms</a></p>
+                <p><span class="fa fa-twitter"></span><a href="">QueryTreeApp</a></p>
+                <p>QueryTree is a service of D4 Software Ltd</p>
+                <p><span class="fa fa-database"></span><a href="">SQLizer.io - Convert Excel to SQL</a></p>
+                <p>&copy;2017 D4 Software Ltd, Studio 9, 50-54 St Paul's Square, Birmingham B3 1QS</p>
+            </div>
+            <div class="col-md-6">
+                <p>Join our mailing list</p>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email address">
+                    </div>
+                    <button class="btn">SIGN UP</button>
+                </form>
+                <p style="padding-top: 24px;">Insights on creating sustainable, data-driven growth</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    $(function(){
+        $(window).scroll(function() {
+            //$("body").css({"background-position":"center "+$(window).scrollTop()+""});
+            if($(window).scrollTop()>=100){
+                $("#bbb").addClass("fixedNav");
+                $(".font").addClass("fontcolor")
+                $("#img2").css("display","block");
+                $("#img1").css("display","none");
+
+            }else{
+                $("#bbb").removeClass("fixedNav");
+                $(".font").removeClass("fontcolor")
+                $("#img2").css("display","none");
+                $("#img1").css("display","block");
+
+            }
+        });
+    });
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+</body>
+</html>

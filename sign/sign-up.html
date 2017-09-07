@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--让IE按照最新版本进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动设备优先    视窗    宽度=设备宽度         缩放比例1倍    最大缩放比例1倍      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+
+
+    <title>QueryTree-Sign Up</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/sign-up.css"/>
+    <style>
+        ul,li{list-style: none;}
+/*************support开始*/
+        body{position: relative!important;}
+        .support{position: fixed; top: 50%; z-index: 10000; right: -25px; box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 1px 0 rgba(0,0,0,.08), inset 0 2px 0 rgba(255,255,255,.7), inset 0 -9px 29px rgba(0,0,0,.1); border-top-left-radius: 6px;     border-top-right-radius: 6px; background-color: rgb(31, 138, 112); transform: rotate(-90deg); margin: 0;}
+        .support a{ color: #fff; padding: 9px 16px; display: block; font-weight: bold;}
+        .support a:hover{  text-decoration: none; }
+        .support:hover{right: -22px;}
+/******************support结束*/
+/*****************nav开始*/
+        .navbar{border-bottom-width: 4px;}
+        nav .logo a img{height: 40px; margin: 5px 5px 5px 10px;float: left;}
+        .navbar-default .navbar-nav > li > a {  color: #333;  }
+        nav button span:hover {background: #fff;}
+        nav .navbar-collapse ul li a{padding: 12px 15px; display: block; font-size: 16px; color: #333;}
+        .logo a span{font-size: 20px; color: #333!important;}
+        nav ul li a:hover,nav .logo a span:hover{text-decoration: none; color: #777!important;}
+ /***************nav结束*/
+/**************contant开始*/
+        .contant h2{padding-top: 80px; font-size: 34px;}
+        .contant .alert{background:#fd7400;border-color:  #e46800; border-bottom-width: 4px; font-size: 16px;color: #fff;}
+        .contant form label{font-size: 16px; color: #333; font-weight: 200;}
+        .contant .form-control{border-top-width: 2px; border-color: #e7e7e7;height: 38px;}
+        .contant .form-control:focus{    border-color: #bedb39; box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(190,219,57,.6);}
+        .contant form .btn,.container .col-md-12 a.btn{font-size: 14px;    color: #fff;  background-color: #1f8a70;  border-color: #1a755f;border-bottom-width: 4px;}
+        .contant .row .col-md-6 img{display: block;height: 320px; margin: auto; box-shadow: 0 2px 3px 1px rgba(0,0,0,.5);}
+        .contant .row .col-md-6 p{font-size: 16px; font-weight: bold;}
+        .contant .row:nth-of-type(3) .col-md-12 p:first-of-type{font-size: 16px; font-weight: bold; margin-top: 11px; color: #555!important; text-shadow: 0px 0px 1px #9c9d9d;}
+        .contant .col-md-12 h3{font-family: Georgia,'Times New Roman',Times,serif; font-size: 28px; letter-spacing:-1px; font-weight: bold;}
+        .contant .col-md-12 h3 span{background: #ff0;}
+        .contant .col-md-4 .panel{border-bottom-width: 4px;}
+        .contant .col-md-4 .panel h3{font-size: 18px; }
+        .contant .col-md-4 .panel-heading{border-bottom: 0;}
+        .contant .col-md-4 .panel .panel-body p { font-size: 16px;  font-weight: 500; font-family: "微软雅黑"; text-shadow: 0 0 1px #ccc;  }
+/**************contant结束*/
+/******************footer开始*/
+        footer{background: #eee;padding-top: 25px;}
+        footer .col-md-6:first-of-type a img{display: block; width: 90px; height: 40px;}
+        footer hr{border-color: #d4d4d4;}
+        footer .col-md-6  p a{font-size: 16px;color: #004358;}
+        footer .col-md-6:last-of-type p{font-size: 15px;color:#aaa;}
+        footer .col-md-6:last-of-type p:nth-of-type(2){  width: 136px; background: #ddd; height: 20px; transition: .35s;}
+        footer .col-md-6:last-of-type p:nth-of-type(2):hover{background: #eee;}
+        
+/****************footer结束*/
+    </style>
+</head>
+<body>
+<!--suppurt开始-->
+<div class=" support"><a href="">support</a></div>
+<!--suppurt结束-->
+<!--nav开始-->
+<nav  class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="img/querytree_logo.png"><span class="navbar-brand">QueryTree</span></a>
+        </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-collapse collapse" style="height: auto;">
+            <ul class="nav navbar-nav"></ul>
+            <ul class="navbar navbar-nav navbar-right">
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--nav结束-->
+<!--container开始-->
+<div class="contant">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center">QueryTree helps people understand what’s going on with their product or marketing</h2>
+            <h4 class="text-center" style="font-size: 20px!important;">It’s the simple, secure, and straightforward way to <strong>dive into your data</strong>, ask <strong>complex questions</strong>, and <strong>share insights</strong> across your organization - no developer or code needed.</h4>
+            <div class="alert alert-warning text-center">Make your data work for you. Start your 14-day free trial of QueryTree, no credit card required:</div>
+        </div>
+        <form class="row form-horizontal">
+            <div class="col-md-4" style="margin: 0 auto; float: none;">
+                <div class="form-group">
+                    <label class="control-label">First Name</label>
+                    <div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Last Name</label>
+                    <div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <div>
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <div>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <input type="button" class="btn btn-success btn-block btn-lg" value="START YOUR FREE TRIAL">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-6 wow bounceInLeft">
+                <p class=" text-center">
+                    😃 Turn <em>gibberish</em> like this:
+                </p>
+                <img src="img/gibberishql.png">
+            </div>
+            <div class="col-md-6 wow bounceInRight">
+                <p class="text-center">
+                    😃 into <em>valuable insights</em> like this:
+                </p>
+                <img src="img/anim-build-report.gif">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>All in a couple of minutes, with zero code and no developer.</p>
+                <br><hr>
+                <h3>"Instead of creating tickets or asking developers to build reports for me I’m diving into my own data and <span>creating reports and visualizations ridiculously fast</span>.”</h3>
+                <p>- Ria, Founder</p>
+                <hr><br>
+            </div>
+        </div>
+        <div class="row">
+            <br><hr>
+            <div class="col-md-4 wow bounceInUp">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">What you can expect</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Once you’ve created your account you get <strong>full access</strong> to QueryTree’s features for 14 days.</p>
+                        <p>That means you can <strong>connect</strong> your own database, <strong>create, schedule and share</strong> unlimited reports, and invite as many team members as you like.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow bounceInUp">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Security is a priority</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>QueryTree uses <strong>strong SSL encryption</strong> and simply needs <strong>read-only access</strong> to your database: you can't change or delete data in your database from QueryTree.</p>
+                        <p>You can set different <strong>user permissions</strong> for invited team members, stopping any accidental changes to existing reports you’ve set up.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow bounceInUp">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Create your own actionable insights</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>Waiting</strong> on other departments and people <strong>costs you time</strong> and stops you from moving forward with your own goals.</p>
+                        <p><strong>QueryTree removes your developer data dependency.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <br><hr>
+            <div class="col-md-12 text-center wow flipInX">
+                 <h3>“I can <span>create a report</span> and visualizations and share it with the whole product team, the marketing team, and my managers in <span>less than five minutes</span>.”</h3>
+                <p>- Shawn, Product Manager</p>
+                <hr>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="" class="btn btn-success btn-lg">START YOUR FREE TRIAL</a>
+            </div>
+        </div> <br>
+
+    </div>
+</div>
+<!--container结束-->
+<!--footer开始-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href=""><img src="img/d4-software-footer-logo.png"></a>
+                <hr>
+                <p><a href="">sqlizer.io</a></p>
+                <p><a href="">QueryTree</a></p>
+
+            </div>
+            <div class="col-md-6">
+                <p class="small">QueryTree is a service of D4 Software Ltd.</p>
+                <p class="text-center"><i class="fa fa-file-powerpoint-o"></i></p>
+                <p class="small">© 2012 - 2017 D4 Software Ltd, Studio 9, 50-54 St Paul's Square, Birmingham B3 1QS</p>
+                <p><a href="">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+</script>
+</body>
+</html>

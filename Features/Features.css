@@ -1,0 +1,32 @@
+html{
+    width: 100%; height: 100%;}
+@media screen and (min-width:1200px ) {
+    header h1{font-size:54px!important;}
+}
+@media screen and (min-width:992px ) and (max-width:1200px) {
+    header h1{font-size: 44px!important;}
+}
+@media screen and (min-width:768px ) and (max-width:992px) {
+    header h1{font-size: 35px!important;}
+}
+@media screen and (min-width:768px ) {
+    header{height: 625px;}
+    .query h2{font-size: 70px!important; font-weight: 400;}
+    .query p{font-size: 21px;}
+    .implement p{font-size: 22px!important;}
+    .ready h2{font-size: 80px!important;}
+    .feature .row p:last-of-type{font-size: 20px!important;}
+}
+@media screen and (max-width:992px ) {
+    .blog .row:last-of-type .container-fluid .row div .blogImg{max-width: 300px; margin: 0 auto;}
+}
+@media screen and (max-width:768px ) {
+    header{padding-bottom: 90px;}
+    header .row div:first-of-type .header-text{max-width: 500px; margin: 0 auto;  padding: 0;}
+    header h1,header h2{text-align: center;}
+    header .row div:first-of-type div a{margin: 0 auto; margin-bottom: 30px;}
+    header .row .phone{width: 100%!important;}
+    header .row .phone  a{display: block;}
+    header .row .phone  a img{ max-width: 300px; display: block; margin: 0 auto;}
+    .query .container{width: 750px;}
+}

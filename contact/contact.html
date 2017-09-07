@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--屏蔽电话号码-->
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <!--让IE按照最新版本进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动设备优先    视窗    宽度=设备宽度         缩放比例1倍    最大缩放比例1倍      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <title>Contact QueryTree | QueryTree</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <style>
+        header{background: url(../img/bg-pattern.png), linear-gradient(to left, #432997, #FE350D);}
+        @media screen and (min-width:768px ) {
+            header{height: 525px;}
+        }
+        #myTab form .form-group{position: relative!important;}
+        #myTab form input{padding-left: 30px!important;     box-shadow: inset 0 4px 3px -3px rgba(0,0,0,0.1);  }
+        #myTab form .form-control:focus{ border-color: #ccc!important;  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #ccc!important;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #ccc!important;}
+        #myTab form i{color: #ccc; position: absolute!important; top: 10px; left: 10px; z-index: 1000000000000;}
+        #myTab .lian{padding: 10px 10px 8px 15px; border: 1px solid #ccc; margin-top: 10px; border-radius: 2px; background: #eee;}
+        #myTab .lian div span{border-right: 1px solid #ccc!important; padding-right: 10px;}
+        #myTab .col-md-6 p a,#Search .col-md-6 p a{font-size: 11px!important;}
+        #Search .text-center{font-weight: 100; color: #ccc; font-size: 26px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  }
+        #myTab ul .active a{border-bottom: 4px solid #999!important; background: none!important; color: #555!important; border-radius: 0;}
+        #myTab ul .active:hover{background: none!important;}
+        #myTab ul{border-bottom: 1px solid #999999;}
+        /**************ready开始*/
+        .address hr{max-width: 100px; border: 1px solid rgba(34, 34, 34, 0.1); margin: 25px auto  0; }
+ /*************ready结束 */
+        .ready{background: url(../img/bg-cta.jpg) no-repeat center center; padding: 250px 0;}
+        .ready h2{color: #fff; font-size: 50px; margin-bottom: 20px; max-width: 450px;}
+
+
+
+    </style>
+</head>
+<body>
+<!--nav开始-->
+<nav class="navbar  navbar-default navbar-fixed-top" id="bbb">
+    <div class="container">
+        <div class="navbar-header logo">
+            <a href="../index.html" id="img1" class="img1 navbar-brand"><img src="../img/logo-light.png"></a>
+            <a href="../index.html" id="img2" class="img2 navbar-brand " style="display: none;"><img src="../img/logo-mid.png" class="img-responsive"></a>
+        </div>
+        <button style="margin-top: 8px;" class="btn btn-default pull-right visible-xs" data-toggle="collapse" data-target="#subMeau">Menu
+            <i class="glyphicon glyphicon-collapse-down"></i>
+        </button>
+        <ul class="nav navbar-nav nav-pills hidden-xs pull-right">
+            <li><a href="../Features/Features.html" class="font">FEATURES</a></li>
+            <li class="dropdown"><a  class="font" href="../Solutions/Solutions .html" >SOLUTIONS<span class="caret hidden-xs" style="color:rgba(255,255,255,0.7);"></span></a>
+                <ul class="dropdown-menu" id="color">
+                   <li><a href="../Solutions/forsoftware.html">FOR SOFTWARE AGENCIES</a></li>
+                    <li><a href="../Solutions/forStartups.html">FOR STARTUPS</a></li>
+                    <li><a href="../Solutions/forMarketing.html">FOR MARKETING TEAMS</a></li>
+                </ul>
+            </li>
+            <li><a href="../Pricing/pricing.html" class="font">PRICING</a></li>
+            <li><a href="../about/about.html" class="font">ABOUT</a></li>
+            <li><a href="../help/help.html" class="font">HELP</a></li>
+            <li><a href="contact.html" class="font">CONTACT</a></li>
+            <li><a href="../blog/blog.html" class="font">BLOG</a></li>
+            <li><a href="../sign/sign-in.html" class="font">SIGN IN</a></li>
+        </ul>
+
+        <ul class="nav  collapse navbar-toggle hidden-md hidden-lg hidden-sm subMeau" id="subMeau">
+            <li><a href="../Features/Features.html">FEATURES</a></li>
+            <li><a href="../Solutions/Solutions .html">SOLUTIONS</a></li>
+           <li><a href="../Pricing/pricing.html" class="font">PRICING</a></li>
+            <li><a href="../about/about.html" class="font">ABOUT</a></li>
+            <li><a href="../help/help.html" class="font">HELP</a></li>
+            <li><a href="contact.html" class="font">CONTACT</a></li>
+            <li><a href="../blog/blog.html" class="font">BLOG</a></li>
+            <li><a href="../sign/sign-in.html" class="font">SIGN IN</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!--nav结束-->
+<!--header开始-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <div class="header-text">
+                    <h1>Talk to us</h1>
+                    <h2>Help & support comes with every QueryTree account</h2><br>
+                    <a href="../sign/sign-up.html" class="btn-xl text-center">START YOUR FREE TEIAL </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 phone">
+
+            </div>
+        </div>
+    </div>
+</header>
+<!--header结束-->
+<!--tab切换开始-->
+<div id="myTab" style="border-bottom: 0!important;" class="nav nav-tabs ">
+    <div class="container  wow bounceInUp">
+        <h2 style="font-size: 50px; margin-top: 100px;">Support</h2>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#QueryTree" data-toggle="tab"> QueryTree</a></li>
+            <li><a href="#Search" data-toggle="tab">Search Articles</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content" style="margin-top: 10px;">
+            <div class="tab-pane fade in active" id="QueryTree">
+                <form>
+                    <div class="form-group">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="text" class=" form-control" placeholder="Requester">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-question-circle-o"></i>
+                        <input type="text" class=" form-control" placeholder="Requester">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" cols="40" rows="6" style="color: #ccc;">Description</textarea>
+                        <div class="lian">
+                            <div>
+                                <span class="fa fa-paperclip"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br><br><br><hr>
+                </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="">Help Desk Software </a>by Freshdesk</p>
+                        <p><a href="">Privacy Policy</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="button" class="btn btn-primary pull-right" value="Contact Us" style="background:#747A79;border: 1px solid #364F4B; border-bottom: 3px solid #364F4B;  ">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Search">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class=" form-control" placeholder="Seach">
+                    </div>
+                </form>
+                <br>
+                <p class="text-center">Search our <br>Knowledge base</p>
+                <p class="text-center"><a href="" style="font-size: 14px!important;">or Browse articles</a></p>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="">Help Desk Software </a>by Freshdesk</p>
+                        <p><a href="">Privacy Policy</a></p>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--tab切换结束-->
+<div class="address">
+    <div class="container">
+        <hr>
+        <h2 style="font-size: 50px;">Address</h2>
+        <p style="font-size: 16px;">D4 Software<br>Studio 9<br>50-54 St Paul’s Square<br>Birmingham<br>B3 1QS</p>
+        <br><br><br><br><br><br><br>
+    </div>
+</div>
+<!--ready开始-->
+<div class="ready">
+    <div class="ready-cta">
+        <div class="container">
+            <h2>Build your first report in minutes</h2>
+            <a href="../sign/sign-up.html" class="btn-xl text-center">START YOUR FREE TEIAL</a>
+        </div>
+    </div>
+</div>
+<!--ready结束-->
+
+
+
+<!--footer开始-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p><a href="">Home</a></p>
+                <p><a href="">Privacy</a> • <a href="">Terms</a></p>
+                <p><span class="fa fa-twitter"></span><a href="">QueryTreeApp</a></p>
+                <p>QueryTree is a service of D4 Software Ltd</p>
+                <p><span class="fa fa-database"></span><a href="">SQLizer.io - Convert Excel to SQL</a></p>
+                <p>&copy;2017 D4 Software Ltd, Studio 9, 50-54 St Paul's Square, Birmingham B3 1QS</p>
+            </div>
+            <div class="col-md-6">
+                <p>Join our mailing list</p>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email address">
+                    </div>
+                    <button class="btn">SIGN UP</button>
+                </form>
+                <p style="padding-top: 24px;">Insights on creating sustainable, data-driven growth</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(function(){
+        $(window).scroll(function() {
+            //$("body").css({"background-position":"center "+$(window).scrollTop()+""});
+            if($(window).scrollTop()>=100){
+                $("#bbb").addClass("fixedNav");
+                $(".font").addClass("fontcolor");
+                $("#img2").css("display","block");
+                $("#img1").css("display","none");
+
+            }else{
+                $("#bbb").removeClass("fixedNav");
+                $(".font").removeClass("fontcolor");
+                $("#img2").css("display","none");
+                $("#img1").css("display","block");
+
+            }
+        });
+    });
+</script>
+<script src="../js/wow.min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+</script>
+</body>
+</html>
